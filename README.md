@@ -43,6 +43,6 @@ public DelegateCommand<EventCommandArgs> ComandoInicio { get; set; }
 ```
 
 Su uso en el XAML, dentro de la ```MainWindow``` para subscribir el comando al evento ```Loaded``` sera algo parecido a:
-```C#
+```xaml
 <accion:EventCommand Command="{Binding ComandoInicio}" Event="Loaded" RegisterElementType="{x:Type vistas:MainWindow}" Parameter="{Binding ElementName=ElementoButton}" />
 ```
